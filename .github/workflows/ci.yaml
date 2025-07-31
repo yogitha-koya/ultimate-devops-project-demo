@@ -76,6 +76,7 @@ jobs:
             context: src/product-catalog
             file: src/product-catalog/Dockerfile
             push: true
+            builder: default
             tags: ${{ secrets.DOCKER_USERNAME }}/product-catalog:${{github.run_id}}
 
     
